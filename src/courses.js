@@ -1,4 +1,4 @@
-import { organisations } from "./organizations";
+import { organisations } from "./organizations.js";
 
 let courses = [];
 
@@ -12,8 +12,8 @@ function addCourseToOrg(orgName, courseName) {
 
 function getCourses(index) {
   organisations.map((org, key) => {
-    if (index === org.id) {
-      return this.courses;
+    if (index === key) {
+      return org.courses;
     }
   });
 }
