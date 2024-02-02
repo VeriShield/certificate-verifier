@@ -98,6 +98,7 @@ async function handle_advance(data) {
       });
       if (data.metadata.msg_sender === approvedAddress) {
         let addCourse = courses.addCourseToOrg(
+          data.metadata.msg_sender,
           JSONpayload.org_name,
           JSONpayload.course_name
         );

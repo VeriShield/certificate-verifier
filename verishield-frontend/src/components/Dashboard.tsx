@@ -113,7 +113,7 @@ export const Dashboard = () => {
   return (
     <div className="w-full bg">
       <Header />
-      <div className="w-full flex gap-4 justify-evenly mb-8 px-8">
+      <div className="w-full flex gap-4 justify-evenly pb-8 px-8">
         <div className="bg-blue-100 flex flex-col gap-2 items-start w-[40%] p-8 rounded-md">
           <h2 className="font-bold text-2xl text-center w-full">Dashboard</h2>
           <div className="flex flex-col w-full pb-2 border-b border-gray-400">
@@ -262,6 +262,10 @@ export const Dashboard = () => {
             </form>
           </div>
         </div>
+      </div>
+
+      <div className="bg-[rgba(0,0,0,0.8)] h-[15rem] text-white text-center flex items-center justify-center mt-5 font-bold text-lg w-full">
+        <p>Copyrights &copy; 2024. All Rights Reserved. VeriShield.</p>
       </div>
     </div>
   );
