@@ -1,4 +1,4 @@
-import { organisations } from "./organizations.js";
+var { organisations } = require("./organizations.js");
 
 let studentID = 0;
 
@@ -57,4 +57,4 @@ function getStudents(orgName, courseName) {
   return subjects[courseName];
 }
 
-export { addStudent, getStudents, getStudent };
+module.exports = { addStudent, getStudents, getStudent };

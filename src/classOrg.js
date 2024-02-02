@@ -1,4 +1,4 @@
-export default class Organization {
+class Organization {
   constructor(name, walletAddress, description) {
     this.name = name;
     this.walletAddress = walletAddress;
@@ -33,4 +33,4 @@ export default class Organization {
   }
 }
 
-// export { Organization };
+module.exports = { Organization };

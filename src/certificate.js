@@ -1,7 +1,7 @@
-import { organisations } from "./organizations.js";
-import { PDFDocument, rgb, degrees, StandardFonts } from "pdf-lib";
-import crypto from "crypto";
-import fontkit from "@pdf-lib/fontkit";
+var { organisations } = require("./organizations.js");
+const { PDFDocument, rgb, degrees, StandardFonts } = require("pdf-lib");
+const crypto = require("crypto");
+const fontkit = require("@pdf-lib/fontkit");
 
 // Function to generate a PDF certificate and issue to a student
 async function generateAndIssueCertificate(orgName, courseName, studentId) {
@@ -127,4 +127,4 @@ async function verifyCertificate(orgName, courseName, studentId) {
 //   });
 // }
 
-export { generateAndIssueCertificate, verifyCertificate };
+module.exports = { generateAndIssueCertificate, verifyCertificate };

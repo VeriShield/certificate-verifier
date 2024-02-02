@@ -1,4 +1,4 @@
-import { organisations } from "./organizations.js";
+var { organisations } = require("./organizations.js");
 
 let courses = [];
 
@@ -18,4 +18,4 @@ function getCourses(index) {
   });
 }
 
-export { addCourseToOrg, getCourses };
+module.exports = { addCourseToOrg, getCourses };

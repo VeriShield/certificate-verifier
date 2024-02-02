@@ -1,4 +1,4 @@
-import Organization from "./classOrg.js";
+const Organization = require("./classOrg.js");
 
 let organisations = [];
 let totalOrg = 0;
@@ -29,7 +29,7 @@ function getOrganisation(index) {
   });
 }
 
-export {
+module.exports = {
   createOrganisation,
   getOrganisation,
   getOrganisations,

@@ -1,12 +1,17 @@
 // XXX even though ethers is not used in the code below, it's very likely
 // it will be used by any DApp, so we are already including it here
-import { ethers } from "ethers";
-import * as certificate from "./certificate.js";
-import * as courses from "./courses.js";
-import * as organisation from "./organizations.js";
-import * as students from "./students.js";
+// import { ethers } from "ethers";
+const { ethers } = require("ethers");
+// import * as certificate from "./certificate.js";
+var certificate = require("./certificate.js");
+// import * as courses from "./courses.js";
+var courses = require("./courses.js");
+// import * as organisation from "./organizations.js";
+var organisation = require("./organizations.js");
+// import * as students from "./students.js";
+var students = require("./students.js");
 var viem = require("viem");
-import erc721abi from "./erc721.json";
+var erc721abi = require("./erc721.json");
 
 const rollup_server = process.env.ROLLUP_HTTP_SERVER_URL;
 console.log("HTTP rollup_server url is " + rollup_server);
